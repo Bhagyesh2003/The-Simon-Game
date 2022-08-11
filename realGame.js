@@ -40,7 +40,7 @@ function nextSequence() {
 }
 
 function playSound(name) {
-  var audio = new Audio("sounds/" + name + ".mp3");
+  var audio = new Audio(name + ".mp3");
   audio.play();
 }
 
@@ -51,28 +51,6 @@ function animatePress(currentColour) {
     $("#" + currentColour).removeClass("pressed");
   }, 100);
 }
-
-// function checkAnswer(currentLevel) {
-//   if (userClickedPattern[currentLevel] === gamePattern[currentLevel] && userClickedPattern.length === gamePattern.length) {
-    
-    
-//  setTimeout(function() {
-//    nextSequence();
-//  }, 1000);
-
-
-// } else {
-//  playSound("wrong");
-//  $("body").addClass("game-over");
-//  setTimeout(function() {
-//   $("body").removeClass("game-over");
-//  }, 200);
-  
-//  $("#level-title").text("Game Over, Press any key to Restart");
-// }
-// }
-
-
 
 
 function checkAnswer(currentLevel) {
